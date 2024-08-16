@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="password" value="123456666"/>
+  <parameter name="username" value="jeffe2123"/>
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <parameter name="password" value="123456666"/>
+    <parameter name="username" value="jeffe2123"/>
+    <classes>
+      <class name="org.name.Sample">
+        <methods>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.name.Sample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

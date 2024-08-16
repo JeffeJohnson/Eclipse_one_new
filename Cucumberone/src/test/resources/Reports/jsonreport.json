@@ -1,0 +1,248 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-01T06:50:34.521Z",
+        "line": 3,
+        "name": "TC01_Validating login page using invalid login credentials.",
+        "description": "",
+        "id": "validation-of-login-page-in--facebook-web-application.;tc01-validating-login-page-using-invalid-login-credentials.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7075856099,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launch the facebook web application.",
+            "match": {
+              "location": "StepDefinition.user_launch_the_facebook_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 385510299,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter invalid username and password.",
+            "match": {
+              "location": "StepDefinition.user_enter_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108080600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click the login button.",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24637073000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify whether error message is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50560200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify whether error message with password wrong is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_with_password_wrong_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-01T06:51:06.952Z",
+        "line": 19,
+        "name": "TC02_Validating login page using invalid login credentials.",
+        "description": "",
+        "id": "validation-of-login-page-in--facebook-web-application.;tc02-validating-login-page-using-invalid-login-credentials.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3153258900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user launch the facebook web application.",
+            "match": {
+              "location": "StepDefinition.user_launch_the_facebook_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 335086899,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter invalid \"jeffe@213\" and \"hello22\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jeffe@213\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"hello22\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.user_enter_invalid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117217601,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click the login button.",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//h2[text()\u003d\u0027Use your Google account\u0027])[2]\"}\n  (Session info: chrome\u003d126.0.6478.127)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.13.0\u0027, revision: \u0027ba948ece5b*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [849c13e066e4ee01da6bbbffb5291560, findElement {using\u003dxpath, value\u003d(//h2[text()\u003d\u0027Use your Google account\u0027])[2]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\\Users\\dell\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61650/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 849c13e066e4ee01da6bbbffb5291560\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.stepdef.StepDefinition.verify_whether_error_message_is_displayed(StepDefinition.java:38)\r\n\tat ✽.verify whether error message is displayed.(file:src/test/resources/Features/cucumber.feature:14)\r\n",
+              "duration": 8921214500,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "verify whether error message is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 776801,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify whether error message with password wrong is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_with_password_wrong_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-01T06:51:19.530Z",
+        "line": 20,
+        "name": "TC02_Validating login page using invalid login credentials.",
+        "description": "",
+        "id": "validation-of-login-page-in--facebook-web-application.;tc02-validating-login-page-using-invalid-login-credentials.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3835706400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user launch the facebook web application.",
+            "match": {
+              "location": "StepDefinition.user_launch_the_facebook_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 370188899,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter invalid \"sher@123\" and \"heooi\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sher@123\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"heooi\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinition.user_enter_invalid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128022700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click the login button.",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//h2[text()\u003d\u0027Use your Google account\u0027])[2]\"}\n  (Session info: chrome\u003d126.0.6478.127)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.13.0\u0027, revision: \u0027ba948ece5b*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2a0a75dd46529f49648638dbfc7b9d05, findElement {using\u003dxpath, value\u003d(//h2[text()\u003d\u0027Use your Google account\u0027])[2]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\\Users\\dell\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61672/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 2a0a75dd46529f49648638dbfc7b9d05\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.stepdef.StepDefinition.verify_whether_error_message_is_displayed(StepDefinition.java:38)\r\n\tat ✽.verify whether error message is displayed.(file:src/test/resources/Features/cucumber.feature:14)\r\n",
+              "duration": 5500590499,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "verify whether error message is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1065999,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify whether error message with password wrong is displayed.",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_with_password_wrong_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validation of login page in  facebook web application.",
+    "description": "",
+    "id": "validation-of-login-page-in--facebook-web-application.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/cucumber.feature",
+    "tags": []
+  }
+]
