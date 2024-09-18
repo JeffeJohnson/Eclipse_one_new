@@ -1,0 +1,45 @@
+//given an array a[] of size N which contains elements from 0 to N-1,
+you need to find all the elements occuring more than once in the given array.
+Complete the function duplicates() which takes array a[] and n as input as parameters and retrns
+a list of elements that occur more than once in the given array in sorted manner.If no such element is
+found return list containing[-1]
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+public class Duplicates{
+    public static void main(String[] args){
+        int a[]={2,3,4,4,2,1,1,8};
+        int n=a.length;
+        ArrayList<Integer> ANS=dupli(a,n);
+        System.out.println(ANS);
+        
+    }
+
+    public static ArrayList<Integer> dupli(int[] a,int n ){
+        Map<Integer,Integer> freq = new HashMap<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        
+        for(int i=0;i<n;i++){
+            if(freq.containsKey(a[i])){
+                freq.put(a[i],freq.get(a[i])+1);
+            }
+            else{
+                freq.put(a[i],1);
+            }
+        
+        }    
+            
+        for(Map.Entry<Integer,Integer> entry:freq.entrySet()){
+            if(entry.getValue()>1){
+                result.add(entry.getKey());
+            }
+        }  
+        
+        if(result.isEmpty()){
+            result.add(-1);
+        }
+        return result;
+    }
+    
+}
